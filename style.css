@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Nunito Sans" ;
+    src: url("./fonts/NunitoSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Nunito Sans Italic";
+    src: url("./fonts/NunitoSans-Italic.ttf");
+}
+body {
+    margin: 0;
+    font-family: "Nunito Sans";
+    font-size: 11px;
+}
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 0;
+    padding: 13px 33px;
+    width: 161px;
+    height: 37px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-style: italic;
+}
+a {
+    color: #E3B873;
+}
+.header {
+    background-color: #131313;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1256px;
+    margin: auto;
+    height: 87px;
+}
+.logo-header {
+    color: #E3B873;
+    padding-right: 46px;
+    width: 179px;
+}
+.menu-header {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+.point-menu {
+    text-decoration: none;
+    color: white;
+    margin-left: 47px;
+}
+.jackor-menu {
+    text-decoration: none;
+    color: white;
+    transition: 400ms all;
+}
+.jackor-menu:hover {
+    color: #E3B873;
+}
+
+.contacts-header {
+    padding-left: 67px;
+    padding-right: 45px;
+    width: 126px;
+    text-align: right;
+}
