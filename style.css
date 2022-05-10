@@ -33,8 +33,19 @@ body {
     font-style: italic;
     text-align: center;
 }
+@media screen and (max-width: 1300px) {
+    .button {
+        width: 100%;
+    }   
+}
 a {
     color: #E3B873;
+}
+@media screen and (max-width: 1300px) {
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }   
 }
 h1 {
     font-family: "Yeseva One";
@@ -45,6 +56,14 @@ h1 {
     text-transform: uppercase;
     color: white;
     margin: 0 auto;
+}
+@media screen and (max-width: 1300px) {
+    h1 {
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 132.83%;
+    }
+    
 }
 h2 {
     font-family: 'Yeseva One';
@@ -64,6 +83,14 @@ p {
     font-size: 14px;
     line-height: 27px;
     color: #FFFFFF;
+}
+@media screen and (max-width: 1300px) {
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 135.84%;
+    }
+    
 }
 h3 {
     font-family: 'Yeseva One';
@@ -121,7 +148,6 @@ h4 {
     }
 }
     
-
 .logo-header {
     color: #E3B873;
     padding-right: 46px;
@@ -178,12 +204,19 @@ h4 {
     position: relative;
     z-index: -1;
 }
+@media screen and (max-width: 1300px) {
+    .hero-section{
+        height: 476px;
+        background-position: center center;
+        background-size: cover;
+    }
+}
 .dark-image {
     position: absolute;
     top: 0px;
     left: 0px;
     opacity: 0.7;
-    height: 707px;
+    height: 100%;
     width: 100%;
     background-color: black;
     z-index: -1;
@@ -194,20 +227,37 @@ h4 {
     margin: auto;
     display: flex;
     flex-direction: column;
-    height: 707px;
+    height: 100%;
     justify-content: center;
+}
+@media screen and (max-width: 1300px) {
+    .container-hero {
+        max-width: 90%;
+    }
 }
 .h1-hero {
     max-width: 676px;
     margin-bottom: 19px;
+}
+@media screen and (max-width: 1300px) {
+    .h1-hero {
+        margin-bottom: 16px;
+    }
 }
 .city-h1 {
     color: #E3B873;
 }
 .p-hero {
     max-width: 504px;
-    height: 89px;
+    max-height: 89px;
     padding-bottom: 41px;
+}
+@media screen and (max-width: 1300px) {
+    .p-hero {
+        max-height: 94px;
+        padding-bottom: 32px;
+    }
+    
 }
 .text-hero {
     font-family: 'Nunito Sans';
@@ -216,9 +266,15 @@ h4 {
     font-size: 22px;
     line-height: 36px;
     color: white;
-}
-.text-hero {
     margin-top: 0px;
+}
+@media screen and (max-width: 1300px) {
+    .text-hero {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 135.84%;
+    }
+    
 }
 .button-1 {
     border: 1px solid #FFFFFF;
@@ -229,16 +285,48 @@ h4 {
     width: 207px;
     color: #FFFFFF;
 }
+@media screen and (max-width: 1300px) {
+    .button-1 {
+        width: 100%;
+    }
+    
+}
 #button-left-hero {
     height: 51px;
     width: 207px;
+}
+@media screen and (max-width: 1300px) {
+    #button-left-hero {
+        width: 100%;
+    }
+    
 }
 .buttons-hero {
     display: flex;
     justify-content: left;
 }
+
+@media screen and (max-width: 1300px) {
+    .buttons-hero {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .button-hero {
+        width: 100%;
+    }
+    #button-left-hero-container {
+        padding-bottom: 26px;
+    }
+}
 #button-right-hero-container {
     padding-left: 20px;
+}
+@media screen and (max-width: 1300px) {
+    #button-right-hero-container {
+        padding-left: 0px;
+    }
+    
 }
 /* Main.Projects */
 .projects {
