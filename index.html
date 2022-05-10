@@ -17,22 +17,22 @@
                 <nav>
                     <ul class="menu-header">
                     <li class="point-menu"> 
-                        <a href="" class="jackor-menu">HOME</a>
+                        <a href="#home" class="jackor-menu">HOME</a>
                     </li>
                     <li class="point-menu"> 
-                        <a href="" class="jackor-menu">PROJECTS</a>
+                        <a href="#projects" class="jackor-menu">PROJECTS</a>
                     </li>  
                     <li class="point-menu"> 
-                        <a href="" class="jackor-menu">MEASUREMENT</a>
+                        <a href="#mesurement" class="jackor-menu">MEASUREMENT</a>
                     </li>  
                     <li class="point-menu"> 
-                        <a href="" class="jackor-menu">TEAM</a>
+                        <a href="#team" class="jackor-menu">TEAM</a>
                     </li>  
                     <li class="point-menu"> 
-                        <a href="" class="jackor-menu">REVIEWS</a>
+                        <a href="#reviews" class="jackor-menu">REVIEWS</a>
                     </li>
                     <li class="point-menu"> 
-                        <a href="" class="jackor-menu">CONTACTS</a>
+                        <a href="#contacts" class="jackor-menu">CONTACTS</a>
                     </li>    
                     </ul>
                 </nav>
@@ -46,7 +46,7 @@
         </div>
     </header>
     <main>
-            <section class="hero-section">
+            <section class="hero-section" id="home">
                     <div class="container-hero">
                         <div class="h1-hero">
                             <h1>Turnkey Repair in the <br> city of <span class="city-h1">Rostov-on-Don</span></h1>
@@ -71,7 +71,7 @@
                     </div>
                 <div class="dark-image"></div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="projects-container">
                 <div class="left-projects">
                     <div class="h2-left-projects">
@@ -199,7 +199,7 @@
 
             </div>
         </section>  
-        <section class="types-of-repear">
+        <section class="types-of-repear" id="mesurement">
             <div class="types-of-repear-container">
                 <h2 class="h2-types-of-repear-container">TYPES OF REPAIR</h2>
                 <div class="img-container" id="img-types-of-repear-container">
@@ -258,7 +258,7 @@
                     </div>
                 </div>
         </section>
-        <section class="stages-of-work-form">
+        <section class="stages-of-work-form" id="team">
             <div class="stages-of-work-form-container">
                 <div class="stages-of-work">
                     <div class="stage-of-work">
@@ -377,9 +377,10 @@
                 </div>
 
             </div>
-            <div class="dark-image" id="dark-image-styles-of-repair"></div>
+            <div class="dark-image-gradient" id="dark-image-gradient-styles-of-repair"></div>
+
         </section>
-        <section class="our-clients">
+        <section class="our-clients" id="reviews">
             <div class="our-clients-container">
                 <h2 class="h2-our-clients-container">our clients</h2>
                 <div class="img-container" id="img-our-clients-container">
@@ -523,21 +524,62 @@
                     </div>
                 </form>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <address>
                 Rostov-on-Don, Nansen St., 239 Shopping Center
               <br>Decorum Tel +7 (928) 768 32 29
             </address>
             <div class="icons-contacts">
                 <div class="icon-contacts">
-                    <img src="" alt="">
+                    <img src="./images/email.svg" alt="email">
                 </div>
-                <div class="icon-network-contacts">
-                    <img src="" alt="">
+                <div class="icon-contacts">
+                    <img src="./images/insta.svg" alt="instagram">
                 </div>
             </div>
-
+            <div class="map-contacts">
+                <img src="./images/map.png" alt="map">
+            </div>
+            <div class="dark-image-gradient"></div>
+            <div class="dark-image" id="dark-image-contacts"></div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo-header">
+                    IC "Repair Design Project"
+                </div>
+                <nav>
+                    <ul class="menu-header">
+                    <li class="point-menu"> 
+                        <a href="#home" class="jackor-menu">HOME</a>
+                    </li>
+                    <li class="point-menu"> 
+                        <a href="#projects" class="jackor-menu">PROJECTS</a>
+                    </li>  
+                    <li class="point-menu"> 
+                        <a href="#mesurement" class="jackor-menu">MEASUREMENT</a>
+                    </li>  
+                    <li class="point-menu"> 
+                        <a href="#team" class="jackor-menu">TEAM</a>
+                    </li>  
+                    <li class="point-menu"> 
+                        <a href="#reviews" class="jackor-menu">REVIEWS</a>
+                    </li>
+                    <li class="point-menu"> 
+                        <a href="#contacts" class="jackor-menu">CONTACTS</a>
+                    </li>    
+                    </ul>
+                </nav>
+                <div class="contacts-header">
+                    <a href="tel:+79287683239" class="tel-contacts-header">+7 (928) 768-32-39</a>
+                </div>
+                <button class="button" id="button-call-header">
+                    Request a call
+                </button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
