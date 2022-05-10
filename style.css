@@ -401,7 +401,12 @@ h4 {
     font-size: 18px;
     margin: 0 auto;
 }
-.form-online-controls-container {
+form.form-online-controls-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+div.form-online-controls-container {
     width: 800px;
     display: flex;
     justify-content: space-between;
@@ -550,6 +555,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 220px;
 }
 h4.list-types-of-repear{
     font-family: 'Yeseva One';
@@ -579,3 +585,223 @@ li.list-types-of-repear{
     line-height: 27px;
     color: #959595;
 }
+
+/* Main.stages-of-work-form */
+section.stages-of-work-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 242px;
+}
+
+.stages-of-work-form-container{
+    display: flex;
+    width: 100%;
+}
+.stages-of-work {
+    background-image: url("./images/stages-of-work.svg");
+    width: 45%;
+    height: 585px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 65px;
+}
+.stage-of-work {
+    display: flex;
+    justify-content: left;
+}
+.num-stage-of-work {
+    width: 41.76px;
+    height: 41.76px;
+    background: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 30px;
+    text-align: center;
+    line-height: 41.76px;
+    margin-right: 17.05px;
+}
+.point-stage-of-work {
+    display: flex;
+    align-items: center;
+    height: 57.76px;
+    padding: 0px;
+    width: 316px;
+}
+span.num {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+span.point-stage-of-work {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+}
+form.form-stages-of-work-form{
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    width: 506px;
+    height: 509px;
+    margin-bottom: 38.44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.tittle-form-stages-of-work-form {
+    width: 250px;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 39px;
+}
+span.tittle-form-stages-of-work-form{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+div.form-stages-of-work-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding-top: 105px;
+}
+div.input-form-stages-of-work-form-container{
+    padding-bottom: 48px;
+}
+.input-form-stages-of-work-form {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+    width: 408px;
+    height: 25px;
+    font-size: 14px;
+    background-color: #131313;
+    color: #FFFFFF;
+    
+}
+.input-form-stages-of-work-form:focus{
+    border: none;
+    border-bottom: 1px solid #E3B873;
+    outline: none;
+}
+.input-form-stages-of-work-form::placeholder{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.checkbox-input-form-stages-of-work-container {
+    display: flex;
+    justify-content: left;
+    width: 408px;
+    margin-top: -32px;
+    margin-bottom: 30px;
+}
+.checkbox-input-form-stages-of-work {
+    position: absolute;
+  opacity: 0;
+}
+
+.checkbox-input-form-stages-of-work+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    zoom: 1;
+  }
+
+  .checkbox-input-form-stages-of-work+label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #E3B873;
+    border-radius: 1px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .checkbox-input-form-stages-of-work:checked+label::before {
+    border-color: #E3B873;
+    background-color: #E3B873;
+    background-image: url("./images/checkbox.svg");
+    background-size: 15px;
+  }
+  .checkbox-input-form-stages-of-work:not(:checked)+label::before{
+    background-color: #131313;
+    background-image: none;
+}
+label#checkbox-input-form-stages-of-work{
+    color: #FFFFFF;
+}
+.button-input-form-stages-of-work-container {
+    display: flex;
+    justify-content: end;
+    width: 409px;
+}
+#button-input-form-stages-of-work {
+    border-radius: 0px;
+    width: 213px;
+    height: 51px;
+}
+.tittle-input-form-stages-of-work-form {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #131313;
+}
+.img-advantage-form-stages-of-work-form {
+    background: #E3B873;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantage-form-stages-of-work-form{
+    display: flex;
+    width: 440px;
+}
+img.img-advantage-form-stages-of-work-form{
+    width: 40px;
+}
+div.text-advantage-form-stages-of-work-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin-left: 25px;
+}
+span.text-advantage-form-stages-of-work-form{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+
