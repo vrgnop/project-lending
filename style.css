@@ -812,6 +812,7 @@ section.styles-of-repair{
     position: relative;
     display: flex;
     justify-content: center;
+    margin-bottom: 110.47px;
 }
 #dark-image-styles-of-repair {
     height: 864px;
@@ -884,5 +885,127 @@ div.right-styles-of-repair-container {
 img.american-classic{
     width: 354px;
 }
+/* Main.Our clients*/
+.our-clients-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h2-our-clients-container {
+    color: #131313;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0 auto;
+    padding-bottom: 13px;
+}
+#img-our-clients-container {
+    padding-bottom: 27.65px;
+}
+div.advantage-our-clients {
+    width: 400px;
+    text-align: center;
+    padding-bottom: 39px;
+}
+span.advantage-our-clients {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+}
+.reviews-our-clients-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1240px;
+}
+.review-our-clients-container {
+    width: 376px;
+    height: 428px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+}
+.img-name-our-clients-container {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.img-our-clients-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin-right: 20px;
+}
+div.name-our-clients-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+span.name-our-clients-container {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+}
+div.text-review-our-clients-container {
+    margin-left: 20px;
+    padding-right: 31.92px;
+}
+p.text-review-our-clients-container {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 180%;
+    /* or 23px */
+    color: #959595;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.details-review-our-clients-container {
+    width: 293.75px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -27px;
+}
 
+div.details-review-our-clients {
+    background-color: #E3B873;
+    display: flex;
+    
+    align-items: center;
+    height: 54px;
+}
+#square-details-review-our-clients {
+    width: 130px;
+}
+#date-details-review-our-clients {
+    width: 163px;
+}
+img.details-review-our-clients{
+    padding-left: 17.36px;
+    padding-right: 15.39px;
+}
+
+span.details-review-our-clients{
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.reviews-our-clients {
+    display: flex;
+    flex-direction: column;
+}
