@@ -18,6 +18,11 @@ body {
     font-size: 11px;
     overflow-x: hidden;
 }
+@media screen and (max-width: 1300px) {
+    body {
+        background-color: #131313;
+    }   
+}
 .button {
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -98,6 +103,7 @@ p {
     font-size: 14px;
     line-height: 27px;
     color: #FFFFFF;
+    margin: 0px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -116,6 +122,7 @@ h3 {
     line-height: 25px;
     text-transform: uppercase;
     color: #E3B873;
+    margin: 0px;
 }
 @media screen and (max-width: 1300px) {
     h3 {
@@ -368,6 +375,12 @@ h4 {
     height: 1074px;
     background-color: #131313;
 }
+@media screen and (max-width: 1300px) {
+    .projects {
+        height: 754px;
+    }
+    
+}
 .projects-container {
     display: flex;
     max-width: 1256px;
@@ -380,6 +393,7 @@ h4 {
         flex-direction: column;
         align-items: center;
         width: 90%;
+        height: 754px;
     }
     
 }
@@ -474,7 +488,7 @@ h4 {
     display: flex;
     justify-content: left;
     align-items: center;
-    padding-top: 85px;
+    padding-top: 26px;
 }
 @media screen and (max-width: 1300px) {
     .slider-left-projects {
@@ -522,9 +536,13 @@ div.p-left-projects {
     height: 86px;
     padding-bottom: 42px;
 }
+p.p-left-projects {
+    margin: 0px;
+}
 @media screen and (max-width: 1300px) {
     div.p-left-projects {
-        max-width: 300px;
+        max-width: 500px;
+        width: 90%;
         padding-bottom: 36px;
     }
     p.p-left-projects {
@@ -551,6 +569,7 @@ div.p-left-projects {
 
 .p-characteristic-left-projects {
     width: 120px;
+    margin-bottom: 34px;
 }
 .tittles-container-right-projects {
     display: flex;
@@ -601,6 +620,13 @@ div.p-left-projects {
     align-items: center;
     margin-top: -320px;
 }
+@media screen and (max-width: 1300px) {
+    .online-controls-container {
+        margin-top: 59px;
+    }
+    
+}
+
 .h2-online-contorls-container {
     padding-bottom: 12.7px;
 }
