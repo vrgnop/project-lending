@@ -1766,6 +1766,8 @@ input.input-form-form-questions {
     font-size: 14px;
     background-color: #131313;
     color: #FFFFFF;
+    border-radius: 0px;
+    background-color: #131313;
 }
 @media screen and (max-width: 1300px) {
     input.input-form-form-questions {
