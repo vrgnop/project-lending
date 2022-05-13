@@ -858,6 +858,8 @@ div.form-online-controls-container {
     .input-form-online-controls {
         border-bottom: 1px solid white;
         width: 100%;
+        border-radius: 0px;
+        background-color: #131313;
     }
     .input-form-online-controls::placeholder{
         color: #FFFFFF;
