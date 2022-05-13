@@ -39,14 +39,17 @@
                 <div class="contacts-header">
                     <a href="tel:+79287683239" class="tel-contacts-header">+7 (928) 768-32-39</a>
                 </div>
+                <form action="#questions">
                 <button class="button" id="button-call-header">
                     Request a call
                 </button>
+            </form>
             </div>
         </div>
     </header>
     <main>
             <section class="hero-section" id="home">
+                <div class="dark-image"></div>
                     <div class="container-hero">
                         <div class="h1-hero">
                             <h1>Turnkey Repair in the <br> city of <span class="city-h1">Rostov-on-Don</span></h1>
@@ -58,18 +61,22 @@
                         </div> 
                         <div class="buttons-hero">
                             <div class="button-hero" id="button-left-hero-container">
-                                <button class="button" id="button-left-hero">
+                                <form action="#team">
+                                <button class="button" id="button-left-hero" type="submit">
                                     CALCULATE THE COST
                                 </button>
+                            </form>
                             </div>
+                            
                             <div class="button-hero" id="button-right-hero-container">
+                                <form action="#questions">
                                 <button class="button-1" id="button-right-hero">
                                     SUBMIT YOUR APPLICATION
                                 </button>
+                            </form>
                             </div>                            
                         </div>
                     </div>
-                <div class="dark-image"></div>
         </section>
         <section class="projects" id="projects">
             <div class="projects-container">
@@ -145,7 +152,7 @@
                     </div>
                 </div>
                 <div class="right-projects">
-                    <div class="tittles-container-right-projects">
+                    <!-- <div class="tittles-container-right-projects">
                         <div class="h4-tittles-projects-right-projects" id="h4-1-tittles-projects-right-projects">
                            <a href="#Rostov-on-Don-Admiral" class="link-tittle-projects-right-projects"><h4 class="h4-tittle-projects-right-projects" id="h4-1-tittle-projects-right-projects">Rostov-on-Don, Admiral</h4></a> 
                             <div class="line-tittle-projects-right-projects" id="line-1-tittle-projects-right-projects"></div>
@@ -158,7 +165,12 @@
                             <a href="#Rostov-on-Don-Patriotic" class="link-tittle-projects-right-projects"><h4 class="h4-tittle-projects-right-projects">Rostov-on-Don Patriotic</h4></a>
                             <div class="line-tittle-projects-right-projects"></div>
                         </div>
-                    </div>
+                    </div> -->
+                    <ul class="tittles-container-right-projects">
+                        <li class="h4-tittle-projects-right-projects"><a href="#Rostov-on-Don-Admiral" class="link-tittle-projects-right-projects"> Rostov-on-Don, Admiral</a></li>
+                         <li class="h4-tittle-projects-right-projects"><a href="#Sochi-Thieves" class="link-tittle-projects-right-projects">Sochi Thieves</a></li>
+                        <li class="h4-tittle-projects-right-projects"><a href="#Sochi-Thieves" class="link-tittle-projects-right-projects">Rostov-on-Don Patriotic</a></li>
+                    </ul>
                     <div class="images-right-projects">
                         <img src="./images/image_2.1.png" alt="Rostov-on-Don, Admiral" class="image-right-projects" id="Rostov-on-Don_Admiral">
                     </div>
@@ -202,22 +214,22 @@
 
             <form class="form-online-controls-container">
                 <div class="form-online-controls-container">
-                    <div class="input-tittle-form-online-controls-container">
+                    <label class="input-tittle-form-online-controls-container">
                         <div>
                             <span class="tittle-form-online-controls">Name</span>
                         </div>
                         <div class="input-form-online-controls-container">
                             <input type="text" class="input-form-online-controls" placeholder="What is your name:">
                         </div>
-                    </div>
-                    <div class="input-tittle-form-online-controls-container" id="phone-input-tittle-form-online-controls-container">
+                    </label>
+                    <label class="input-tittle-form-online-controls-container" id="phone-input-tittle-form-online-controls-container">
                         <div>
                             <span class="tittle-form-online-controls">Phone</span>
                         </div>
                         <div class="input-form-online-controls-container">
                             <input type="text" class="input-form-online-controls" placeholder="Your phone number:">
                         </div>
-                    </div>
+                    </label>
                     <div class="button-form-online-controls-container">
                         <button class="button" id="button-form-online-controls">Submit</button>
                     </div>
@@ -329,30 +341,30 @@
                         <div class="tittle-form-stages-of-work-form">
                             <span class="tittle-form-stages-of-work-form">Leave a request for free departure of the measurer</span>
                         </div>
-                        <div class="input-form-stages-of-work-form-container">
+                        <label class="input-form-stages-of-work-form-container">
                             <div>
                                 <span class="tittle-input-form-stages-of-work-form">Name</span>
                             </div>
                             <div>
                                 <input type="text" class="input-form-stages-of-work-form" placeholder="What is your name:">
                             </div>
-                        </div>
-                        <div class="input-form-stages-of-work-form-container">
+                        </label>
+                        <label class="input-form-stages-of-work-form-container">
                             <div>
                                 <span class="tittle-input-form-stages-of-work-form">Phone</span>
                             </div>
                             <div>
                                 <input type="text" class="input-form-stages-of-work-form" placeholder="Your phone number:">
                             </div>
-                        </div>
-                        <div class="input-form-stages-of-work-form-container">
+                        </label>
+                        <label class="input-form-stages-of-work-form-container">
                             <div>
                                 <span class="tittle-input-form-stages-of-work-form">Email</span>
                             </div>
                             <div>
                                 <input type="text" class="input-form-stages-of-work-form" placeholder="Your email">
                             </div>
-                        </div>
+                        </label>
                         <div class="checkbox-input-form-stages-of-work-container">
                             <input class="checkbox-input-form-stages-of-work" type="checkbox" name="happy" value="yes" id="checkbox-input-form-stages-of-work" checked> <label for="checkbox-input-form-stages-of-work" id="checkbox-input-form-stages-of-work">I agree to the processing of personal data</label> 
                         </div>
@@ -528,7 +540,7 @@
                 </div>
             </div>
         </section>
-        <section class="form-questions">
+        <section class="form-questions" id="questions">
             <div class="background-form-questions-container">
                 <div class="left-backgrond-form-questions-container">
                 </div>
@@ -540,31 +552,31 @@
                         <span class="tittle-form-form-questions">have any questions?</span>
                     </div>
                     <div class="input-form-form-questions-container" id="name-phone-input-form-form-questions-container">
-                        <div class="input-form-form-questions">
+                        <label class="input-form-form-questions">
                             <div>
                                 <span class="tittle-input-form-form-questions">Name</span>
                             </div>
                             <div>
                                 <input type="text" class="input-form-form-questions" placeholder="What is your name:">
                             </div>
-                        </div>
-                        <div class="input-form-form-questions">
+                        </label>
+                        <label class="input-form-form-questions">
                             <div>
                                 <span class="tittle-input-form-form-questions">Phone</span>
                             </div>
                             <div>
                                 <input type="text" class="input-form-form-questions" placeholder="Your phone number:">
                             </div>
-                        </div>
+                        </label>
                     </div>
-                    <div class="input-form-form-questions" id="email-input-form-form-questions">
+                    <label class="input-form-form-questions" id="question-input-form-form-questions">
                         <div>
-                            <span class="tittle-input-form-form-questions">Email</span>
+                            <span class="tittle-input-form-form-questions">Question</span>
                         </div>
                         <div>
-                            <input type="text" class="input-form-form-questions" placeholder="Your email" id="email-input-form-form-questions">
+                            <input type="text" class="input-form-form-questions" placeholder="I want to know:" id="question-input-form-form-questions">
                         </div>
-                    </div>
+                    </label>
                     <div class="checkbox-input-form-form-questions-container">
                         <input class="checkbox-input-form-form-questions" type="checkbox" name="happy" value="yes" id="checkbox-input-form-form-questions" checked> <label for="checkbox-input-form-stages-of-work" id="checkbox-input-form-stages-of-work">I agree to the processing of personal data</label> 
                     </div>
@@ -574,23 +586,25 @@
                 </form>
         </section>
         <section class="contacts" id="contacts">
-            <address>
-                Rostov-on-Don, Nansen St., 239 Shopping Center
-              <br>Decorum Tel +7 (928) 768 32 29
-            </address>
-            <div class="icons-contacts">
-                <div class="icon-contacts">
-                    <img src="./images/email.svg" alt="email">
+            <div class="contacts-container">
+                <address>
+                    Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
+                </address>
+                <div class="icons-contacts">
+                    <div class="icon-contacts">
+                        <img src="./images/email.svg" alt="email">
+                    </div>
+                    <div class="icon-contacts">
+                        <img src="./images/insta.svg" alt="instagram">
+                    </div>
                 </div>
-                <div class="icon-contacts">
-                    <img src="./images/insta.svg" alt="instagram">
+                <div class="map-contacts">
+                    <img src="./images/map.png" alt="map" class="img-map-contacts">
+                    <img src="./images/map-mobile.png" alt="map" class="img-map-contacts-mobile">
                 </div>
+                <div class="dark-image-gradient"></div>
+                <div class="dark-image" id="dark-image-contacts"></div>
             </div>
-            <div class="map-contacts">
-                <img src="./images/map.png" alt="map">
-            </div>
-            <div class="dark-image-gradient"></div>
-            <div class="dark-image" id="dark-image-contacts"></div>
         </section>
     </main>
     <footer class="footer">
