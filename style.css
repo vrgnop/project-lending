@@ -1752,6 +1752,7 @@ div.input-form-form-questions-container {
 @media screen and (max-width: 1300px) {
     div.input-form-form-questions-container {
         margin-bottom: 0px;
+        width: 100%;
     }
     
 }
