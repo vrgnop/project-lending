@@ -854,6 +854,7 @@ div.form-online-controls-container {
     }
     .input-form-online-controls-container {
         padding-bottom: 40px;
+        width: 100%;
     }
     .input-form-online-controls {
         border-bottom: 1px solid white;
