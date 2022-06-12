@@ -25,47 +25,54 @@ function initSlider () {
     const apartmentAreaLeftProjects = document.querySelector('.apartment-area')
     const repairTimeAreaLeftProjects = document.querySelector('.repair-time')
     const repairCostAreaLeftProjects = document.querySelector('.repair-cost')
-    createImages ()
-    let linkTittlesRightProjects = document.querySelector('.link-tittle-projects-right-projects')
-    function createImages () {
+    const sliderLeftProjects = document.querySelector('.slider-left-projects')
+    const pointsArrowSliderLeftProjects = document.querySelector('.points-arrow-slider-left-projects')
+    const projectsContainer = document.querySelector('.projects-container')
+    createElements()
+    function createElements () {
         completedProjects.forEach( (element, index) => {
-            let imageRightProjects = `<img src="${element.img}" class='image-right-projects n${index} ${index === 0 ? 'active-img' : ''}'  id='${element.city.replace(' ', '_')}' data-index = ${index} alt='${element.city}'>`
+            let imageRightProjects = `<img src="${element.img}" class='image-right-projects n${index} ${index === 0 ? 'active' : ''}'  id='${element.city.replace(' ', '_')}' data-index = ${index} alt='${element.city}'>`
             imageRightProjectsDiv.innerHTML += imageRightProjects
-            let tittleRightProjects = `<li class="h4-tittle-projects-right-projects"><a href='#${element.city.replace(' ', '_')}' class='link-tittle-projects-right-projects n${index} ${index === 0 ? 'active-tittle' : ''} ${element.city.replace(' ', '_')}'> ${element.city}</a></li>`
+            let tittleRightProjects = `<li class="h4-tittle-projects-right-projects"><a href='#${element.city.replace(' ', '_')}' class='link-tittle-projects-right-projects n${index} ${index === 0 ? 'active' : ''} ${element.city.replace(' ', '_')}'> ${element.city}</a></li>`
             tittlesContainerRightProjects.innerHTML += tittleRightProjects
-            let cityCharacteristicProject = `<p class="p-right-projects n${index} ${index === 0 ? 'active-p' : ''} data-index = ${index}">${element.city}</p>`
+            let cityCharacteristicProject = `<p class="p-right-projects n${index} ${index === 0 ? 'active' : ''} data-index = ${index}">${element.city}</p>`
             cityLeftProjects.innerHTML += cityCharacteristicProject
-            let apartmentAreaCharacteristicProject = `<p class="p-right-projects n${index} ${index === 0 ? 'active-p' : ''} data-index = ${index}">${element.apartmentArea}</p>`
+            let apartmentAreaCharacteristicProject = `<p class="p-right-projects n${index} ${index === 0 ? 'active' : ''} data-index = ${index}">${element.apartmentArea}</p>`
             apartmentAreaLeftProjects.innerHTML += apartmentAreaCharacteristicProject
-            let repairTimeAreaCharacteristicProject = `<p class="p-right-projects n${index} ${index === 0 ? 'active-p' : ''} data-index = ${index}">${element.repairTime}</p>`
+            let repairTimeAreaCharacteristicProject = `<p class="p-right-projects n${index} ${index === 0 ? 'active' : ''} data-index = ${index}">${element.repairTime}</p>`
             repairTimeAreaLeftProjects.innerHTML += repairTimeAreaCharacteristicProject
-            let repairCostAreaCharacteristicProject = `<p class="p-right-projects n${index} ${index === 0 ? 'active-p' : ''} data-index = ${index}">${element.repairCost}</p>`
+            let repairCostAreaCharacteristicProject = `<p class="p-right-projects n${index} ${index === 0 ? 'active' : ''} data-index = ${index}">${element.repairCost}</p>`
             repairCostAreaLeftProjects.innerHTML += repairCostAreaCharacteristicProject
-            // let apartmentAreaCharacteristicProject = `<p>${element.apartmentArea}</p>`
-            // console.log(characteristicLeftProjects)
+            let pointArrowSliderLeftProjects = `<div class="point-arrow-slider-left-projects n${index} ${index === 0 ? 'active' : ''} data-index = ${index}"></div>`
+            pointsArrowSliderLeftProjects.innerHTML += pointArrowSliderLeftProjects
         })
     }
-
-
-
-    console.log(cityLeftProjects.querySelector(".active-p"))
+    arrowSlider()
+    function arrowSlider () {
+        sliderLeftProjects.querySelectorAll('.arrow-slider-left-projects').forEach((element) => {
+            let newIndex = 0
+            element.addEventListener('click', () => {
+                let index = +imageRightProjectsDiv.querySelector('.active').getAttribute('data-index')
+                element.classList.contains('left-arrow-slider-left-projects') ? newIndex = index > 0  ? index - 1 : completedProjects.length - 1 : newIndex = index < completedProjects.length - 1 ? index + 1 : 0
+                moveSlider(newIndex)
+            })
+        })
+    }
+    pointSlider()
+    function pointSlider () {
+        pointsArrowSliderLeftProjects.querySelectorAll('.point-arrow-slider-left-projects').forEach( (element, index) => {
+           element.addEventListener('click', () => {
+               moveSlider(index)
+            })
+        })
+    }
     function moveSlider(number) {
-        imageRightProjectsDiv.querySelector('.active-img').classList.remove('active-img')
-        imageRightProjectsDiv.querySelector('.n' + number).classList.add('active-img')
-        cityLeftProjects.querySelector('.active-p').classList.remove('active-p')
-        cityLeftProjects.querySelector('.n' + number).classList.add('active-p')
-        apartmentAreaLeftProjects.querySelector('.active-p').classList.remove('active-p')
-        apartmentAreaLeftProjects.querySelector('.n' + number).classList.add('active-p')
-        repairTimeAreaLeftProjects.querySelector('.active-p').classList.remove('active-p')
-        repairTimeAreaLeftProjects.querySelector('.n' + number).classList.add('active-p')
-        repairCostAreaLeftProjects.querySelector('.active-p').classList.remove('active-p')
-        repairCostAreaLeftProjects.querySelector('.n' + number).classList.add('active-p')
-        tittlesContainerRightProjects.querySelector('.active-tittle').classList.remove('active-tittle')
-        tittlesContainerRightProjects.querySelector('.n' + number).classList.add('active-tittle')
+        projectsContainer.querySelectorAll('.active').forEach(element => element.classList.remove('active'))
+        projectsContainer.querySelectorAll('.n' + number).forEach(element => element.classList.add('active'))
     }
     function loopSlider () {
         setInterval(() => {
-           let index = +imageRightProjectsDiv.querySelector('.active-img').getAttribute('data-index')
+           let index = +imageRightProjectsDiv.querySelector('.active').getAttribute('data-index')
             let newIndex = index < completedProjects.length - 1 ? index + 1 : 0
             moveSlider(newIndex)
         }, 8000)
