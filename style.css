@@ -602,7 +602,9 @@ p.p-left-projects {
 
 .p-characteristic-left-projects {
     width: 120px;
+    height: 54px;
     margin-bottom: 34px;
+    position: relative;
 }
 .tittles-container-right-projects {
     display: flex;
@@ -636,9 +638,34 @@ p.p-left-projects {
     color: #E3B873;
     border-bottom: 1px solid #E3B873;
 }
-
+.active-tittle {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+.images-right-projects-div {
+    position: relative;
+    width: 679px;
+    height: 482px;
+}
 .image-right-projects{
+    top: 0;
+    left: 0px;
+    position: absolute;
     max-width: 679px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 400ms;
+}
+.p-right-projects {
+    position: absolute;
+    opacity: 0;
+}
+.active-p {
+    opacity: 1;
+}
+.active-img {
+    opacity: 1;
 }
 #h4-1-tittles-projects-right-projects {
     padding-left: 0px;
