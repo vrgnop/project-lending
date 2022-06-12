@@ -185,6 +185,7 @@ h4 {
         width: 100%;
         position: relative;
         margin-bottom: 36.65px;
+        height: 250px;
     }
     .arrows-image-mobile-slider-general-container {
         position: absolute;
@@ -194,16 +195,27 @@ h4 {
         justify-content: center;
         align-items: center;
         top: 0px;
+        position: relative;
     }
     .arrows-image-mobile-slider-container {
         display: flex;
         justify-content: space-between;
         width: 95%;
+        z-index: 1;
         /* margin-top: -40%; */
         /* margin-bottom: 40%; */
     }
     .image-mobile-slider {
         width: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 400ms;
+    }
+    .image-mobile-slider.active {
+        opacity: 1;
     }
     .arrow-image-mobile-slider-container {
         background-color: #E3B873;

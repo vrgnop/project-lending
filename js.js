@@ -30,6 +30,7 @@ function initSlider () {
     const sliderLeftProjects = document.querySelector('.slider-left-projects') // Блок слайдера (стрелки+точки)
     const pointsArrowSliderLeftProjects = document.querySelector('.points-arrow-slider-left-projects') // Блок точек
     const projectsContainer = document.querySelector('.projects-container') // Весь блок целиком. Он понадобится для упрощения функции слайдера
+    const mobileSliderContainer = document.querySelector('.mobile-slider-container')
 
     //Создаем нужные элементы внутри блоков внутри блоков
     createElements()
@@ -37,7 +38,9 @@ function initSlider () {
         completedProjects.forEach( (element, index) => {
             //Картинки
             let imageRightProjects = `<img src="${element.img}" class='image-right-projects n${index} ${index === 0 ? 'active' : ''}'  id='${element.city.replace(' ', '_')}' data-index = ${index} alt='${element.city}'>`
-            imageRightProjectsDiv.innerHTML += imageRightProjects
+            imageRightProjectsDiv.innerHTML += imageRightProjects //Десктоп
+            let mobileImageRightProjects = `<img src="${element.img}" class='image-mobile-slider n${index} ${index === 0 ? 'active' : ''}'  id='${element.city.replace(' ', '_')}' data-index = ${index} alt='${element.city}'>`
+            mobileSliderContainer.innerHTML += mobileImageRightProjects //Мобайл
             //Заголовки
             let tittleRightProjects = `<li class="h4-tittle-projects-right-projects"><a href='#${element.city.replace(' ', '_')}' class='link-tittle-projects-right-projects n${index} ${index === 0 ? 'active' : ''} ${element.city.replace(' ', '_')}'> ${element.city}</a></li>`
             tittlesContainerRightProjects.innerHTML += tittleRightProjects
@@ -79,14 +82,16 @@ function initSlider () {
     // Создаем функцию, смены слайда на стрелках
     arrowSlider()
     function arrowSlider () {
-        sliderLeftProjects.querySelectorAll('.arrow-slider-left-projects').forEach((element) => {
+        function arrowSliderCallBack (element) {
             let newIndex = 0
             element.addEventListener('click', () => {
                 let index = +imageRightProjectsDiv.querySelector('.active').getAttribute('data-index')
-                element.classList.contains('left-arrow-slider-left-projects') ? newIndex = index > 0  ? index - 1 : completedProjects.length - 1 : newIndex = index < completedProjects.length - 1 ? index + 1 : 0
+                element.classList.contains('left') ? newIndex = index > 0  ? index - 1 : completedProjects.length - 1 : newIndex = index < completedProjects.length - 1 ? index + 1 : 0
                 moveSlider(newIndex)
-            })
         })
+        }
+        sliderLeftProjects.querySelectorAll('.arrow-slider-left-projects').forEach(arrowSliderCallBack) //Десктоп
+        mobileSliderContainer.querySelectorAll('.arrow-image-mobile-slider-container').forEach(arrowSliderCallBack) // Мобайл
     }
 
     // Создаем функцию, смены слайда на точках
